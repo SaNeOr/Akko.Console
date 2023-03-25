@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akko.Console", "Akko.Console.csproj", "{C8878D0A-D887-49AE-8B8D-1741CB0FD834}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8878D0A-D887-49AE-8B8D-1741CB0FD834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8878D0A-D887-49AE-8B8D-1741CB0FD834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8878D0A-D887-49AE-8B8D-1741CB0FD834}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{C8878D0A-D887-49AE-8B8D-1741CB0FD834}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{C8878D0A-D887-49AE-8B8D-1741CB0FD834}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{C8878D0A-D887-49AE-8B8D-1741CB0FD834}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://df04fvch3j0d4"]
+
+[ext_resource type="Script" path="res://assets/panels/index/index.cs" id="1_mfiuc"]
+
+[node name="Index" type="Panel"]
+process_priority = 15
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mfiuc")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopBar" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Menu" type="HBoxContainer" parent="VBoxContainer/TopBar"]
+layout_mode = 2
+
+[node name="File" type="MenuButton" parent="VBoxContainer/TopBar/Menu"]
+layout_mode = 2
+text = "File
+"
+
+[node name="Layout" type="HSplitContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Left" type="HSplitContainer" parent="VBoxContainer/Layout"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="Top" type="TabContainer" parent="VBoxContainer/Layout/Left"]
+layout_mode = 2
+
+[node name="Right" type="VSplitContainer" parent="VBoxContainer/Layout"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Top" type="TabContainer" parent="VBoxContainer/Layout/Right"]
+layout_mode = 2
+
+[node name="StatusBar" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="FPS" type="HBoxContainer" parent="VBoxContainer/StatusBar"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="rate" type="Label" parent="VBoxContainer/StatusBar/FPS"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2

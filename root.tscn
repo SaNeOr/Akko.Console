@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw8cb10igi7ov"]
+
+[ext_resource type="Script" path="res://codes/Framework/Bootstrap.cs" id="1_jycqm"]
+[ext_resource type="Script" path="res://codes/Gameplay/Main.cs" id="2_7te02"]
+
+[node name="root" type="Node"]
+
+[node name="Bootstrap" type="Node" parent="."]
+script = ExtResource("1_jycqm")
+
+[node name="Main" type="Node" parent="."]
+script = ExtResource("2_7te02")
